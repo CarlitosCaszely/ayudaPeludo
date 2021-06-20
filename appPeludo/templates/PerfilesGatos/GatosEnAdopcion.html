@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+    {% load static %}
+    {% block titulo %}
+        Carnet Gatos
+    {% endblock titulo %}
+
+    {% block contenido %}
+        <div class="col-md-9 col-xl-10" style="width: 80%;">
+            <div class="text-center">
+                <h1>GATOS EN ADOPCIÓN</h1>
+                <p style="text-align:justify;"> Lorem ipsum dolor sit amet consectetur adipiscing elit gravida eros, venenatis phasellus faucibus parturient rutrum ut volutpat class auctor, luctus pulvinar risus erat praesent tincidunt fusce eleifend. Leo tristique ridiculus tempor augue ullamcorper molestie, nulla torquent scelerisque quam cursus tellus accumsan, potenti dapibus donec blandit at. Sagittis tempor vel feugiat nam mauris class, et rhoncus consequat viverra morbi eros, rutrum lobortis a dictum primis, accumsan libero nisi parturient ante.</p>
+
+                <p style="text-align:justify;"> Lorem ipsum dolor sit amet consectetur adipiscing elit gravida eros, venenatis phasellus faucibus parturient rutrum ut volutpat class auctor, luctus pulvinar risus erat praesent tincidunt fusce eleifend. Leo tristique ridiculus tempor augue ullamcorper molestie, nulla torquent scelerisque quam cursus tellus accumsan, potenti dapibus donec blandit at. Sagittis tempor vel feugiat nam mauris class, et rhoncus consequat viverra morbi eros, rutrum lobortis a dictum primis, accumsan libero nisi parturient ante.</p>
+            </div>
+            <div class="text-justify">
+                <h2>Nuestros gatos que buscan familia :</h2>
+                <img src="{% static 'img/GatosFamilia/Ginger.jpg' %}" style="width: 300px; height=300px; align=left;"> 
+                <h3><a href="Ginger.html">Ginger</a></h3>
+                <img src="{% static 'img/GatosFamilia/Tommy.jpg' %}" style="width: 300px; height=300px; align=left;"> 
+                <h3><a href="Tommy.html">Tommy</a></h3>
+                <img src="{% static 'img/GatosFamilia/Lucifer.jpg' %}" style=" height=300px; width: 300px; align=left;">  
+                <h3><a href="Lucifer.html">Lucifer</a></h3>
+            </div>
+        </div>
+    {% endblock contenido %}
+
+
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+    <title>Perfiles de Gatos</title>
+</head>
+<body>
+    <h4 align=right><a href="../index.html" >Volver al Inicio</a></h4>
+    <center><h1>GATOS EN ADOPCIÓN</h1></center>
+    <center><p style="text-align:justify;"> Lorem ipsum dolor sit amet consectetur adipiscing elit gravida eros, venenatis phasellus faucibus parturient rutrum ut volutpat class auctor, luctus pulvinar risus erat praesent tincidunt fusce eleifend. Leo tristique ridiculus tempor augue ullamcorper molestie, nulla torquent scelerisque quam cursus tellus accumsan, potenti dapibus donec blandit at. Sagittis tempor vel feugiat nam mauris class, et rhoncus consequat viverra morbi eros, rutrum lobortis a dictum primis, accumsan libero nisi parturient ante.</p></center>
+    <center><h1>Nuestros gatos que buscan familia :</h1></center>
+    <img src="GatosFamilia/Ginger.jpg"width="150" height="150" align="left"> 
+    <br><br><br><br><br><br><br><br>
+    <h2><a href="Ginger.html">Ginger</a></h2>
+    <img src="GatosFamilia/Tommy.jpg"width="150" height="150" align="left"> 
+    <br><br><br><br><br><br><br><br>
+    <h2><a href="Tommy.html">Tommy</a></h2>
+    <img src="GatosFamilia/Lucifer.png"width="150" height="150" align="left"> 
+    <br><br><br><br><br><br><br><br>
+    <h2><a href="Lucifer.html">Lucifer</a></h2>
+</body>
+</html> {% endcomment %}
+

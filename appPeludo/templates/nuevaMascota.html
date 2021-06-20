@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+    {% block titulo %}
+        Agregar Mascota
+    {% endblock titulo %}
+
+
+    {% block contenido %}
+        <div class="text-center col-md-9 col-xl-10 m-auto" style="width: 80%;" >
+            <h1>Agregar Mascota</h1>
+            <form action="{% url 'agregarMascota' %}" method="POST">
+                {% csrf_token %}{% comment %} Se usa siempre este token cuando se está usando el metodo post en un formulario {% endcomment %}
+                <label for = "codigo">Codigo</label><br>
+                <input type = "text" name = "codigo"><br>
+
+                <label for = "nombre">Nombre Mascota</label><br>
+                <input type = "text" name = "nombre"><br>
+
+                <input type = "submit" value = "Guardar Mascota">
+            </form>
+        </div>
+    {% endblock contenido %}
+

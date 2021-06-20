@@ -1,0 +1,87 @@
+{% extends 'layout.html' %}
+
+	{% block titulo %}
+		Pagina de Prueba
+	{% endblock titulo %}
+
+	{% block contenido %}
+	<div class="text-center col-md-9 col-xl-10 m-auto" style="width: 80%;">
+		<h1>Pagina de prueba</h1>
+		<h2>Bienvenidx {{nombre}}</2>
+		<h3>El primer juego que mencionaste es {{juegos.0}}<h3>
+		<h3>Lista de juegos</h3>
+		<ol>
+			{% for juego in juegos %}
+				<li>{{juego}}</li>
+			{% endfor %}
+		</ol>
+		<h3>{{nombre}}, conoce un niño llamado {{nino.nombre}} tiene {{nino.edad}} años<h3>
+	</div>
+	{% endblock contenido %}
+
+	
+{% comment %} 	
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Inicio</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="{% static 'css/main.css' %}"/>
+		<link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+		<script src="{% static 'js/jquery-3.6.0.min.js' %} "></script>
+	</head>
+	<body class="negro">
+
+		<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap shadow">
+			<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#"></a>
+			<button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menuvertical" aria-controls="menuvertical" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		  </header>
+		  <div class="container-fluid">
+			<div class="row">
+			  <nav id="menuvertical" class="col-md-3 col-xl-2 d-md-block sidebar collapse">
+				<div class="position-sticky pt-3">
+						<ul id="sinpuntos" class="nav flex-column mb-auto">
+							<li class="nav-item"><a class="nav-link" href="/index">Inicio</a></li>
+							<li class="nav-item"><a class="nav-link" href="">Nosotros</a></li>
+							<li class="nav-item"><a class="nav-link" href="PerfilesPerros/PerrosEnAdopcion.html">Perros</a></li>
+							<li class="nav-item"><a class="nav-link" href="PerfilesGatos/GatosEnAdopcion.html">Gatos</a></li>
+							<li class="nav-item"><a class="nav-link" href="">Contacto</a></li>
+							<li class="nav-item"><a class="nav-link" href="formulario.html">Formulario</a></li>
+                            <li class="nav-item"><a class="nav-link" href="consultaClima.html">Consulta Clima</a></li>
+						</ul>
+			  </nav>
+			  <div class="col-md-6 col-xl-4 col-sm-12 m-auto"><!--mx-auto es para centrar horizontalmente y m-auto lo deja en el centro de todo-->
+				<div>
+					<div class="text-center text-primario">
+						<h1>Pagina de prueba</h1>
+						<h2>Bienvenidx {{nombre}}</2>
+						<h3>El primer juego que mencionaste es {{juegos.0}}<h3>
+						<h3>Lista de juegos</h3>
+						<ol>
+							{% for juego in juegos %}
+								<li>{{juego}}</li>
+							{% endfor %}
+						</ol>
+						<h3>{{nombre}}, conoce un niño llamado {{nino.nombre}} tiene {{nino.edad}} años<h3>
+					</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <script src="{% static 'js/main.js' %}"></script>
+		  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+		  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+		  <script src="{% static 'js/scriptClima.js' %} "></script>
+
+	</body>
+<html> {% endcomment %}

@@ -1,0 +1,128 @@
+{% extends 'layout.html' %}
+	%{% load static %}%
+    {% block titulo %}
+        Inicio
+    {% endblock %}
+
+    {% block contenido %}
+		<div class="col-md-6 col-xl-4 col-sm-12 mx-auto" style="width: 1000px;"><!--mx-auto es para centrar horizontalmente y m-auto lo deja en el centro de todo-->
+			<div>
+				<div>
+					<h1 class="display-3 text-center text-primario ">ONG - AYUDA A UN PELUDO</h1>
+					<p class="text-justify text-light">Lorem ipsum dolor sit amet consectetur adipiscing elit gravida eros, venenatis phasellus faucibus parturient rutrum ut volutpat class auctor, luctus pulvinar risus erat praesent tincidunt fusce eleifend. Leo tristique ridiculus tempor augue ullamcorper molestie, nulla torquent scelerisque quam cursus tellus accumsan, potenti dapibus donec blandit at. Sagittis tempor vel feugiat nam mauris class, et rhoncus consequat viverra morbi eros, rutrum lobortis a dictum primis, accumsan libero nisi parturient ante.Lorem ipsum dolor sit amet consectetur adipiscing elit gravida eros, venenatis phasellus faucibus parturient rutrum ut volutpat class auctor, luctus pulvinar risus erat praesent tincidunt fusce eleifend. Leo tristique ridiculus tempor augue ullamcorper molestie, nulla torquent scelerisque quam cursus tellus accumsan, potenti dapibus donec blandit at. Sagittis tempor vel feugiat nam mauris class, et rhoncus consequat viverra morbi eros, rutrum lobortis a dictum primis, accumsan libero nisi parturient ante.</p>
+					<h2 class="display-5 text-center text-primario">Nuestras secciones de ayuda:</h2>
+				</div>
+				<div class="d-flex justify-content-center">
+					<a href="PerfilesGatos/GatosEnAdopcion.html"><img class="centradoimg gato" id="justificado"src="{% static 'img/ImagenesIndex/GatoIndex.png' %}"><a>
+					<a href="PerfilesPerros/PerrosEnAdopcion.html"><img class="centradoimg perro" src="{% static 'img/ImagenesIndex/PerroIndex.png' %}"></a>
+				</div>
+			</div>
+		</div>
+    {% endblock %}
+
+{% comment %} {% extends 'layout.html' %}
+
+    {% block titulo %}
+        Prueba de Layout
+    {% endblock titulo %}
+
+    {% block contenido %}
+        ESCRIBIR CONTENIDO
+    {% endblock contenido %} {% endcomment %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Inicio</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="{% static 'css/main.css' %}"/>
+		<link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+		<script src="js/jquery-3.6.0.min.js"></script>
+	</head>
+	<body class="negro">
+
+		<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap shadow">
+			<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#"></a>
+			<button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menuvertical" aria-controls="menuvertical" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		  </header>
+		  <div class="container-fluid">
+			<div class="row">
+			  <nav id="menuvertical" class="col-md-3 col-xl-2 d-md-block sidebar collapse">
+				<div class="position-sticky pt-3">
+						<ul id="sinpuntos" class="nav flex-column mb-auto">
+							<li class="nav-item"><a class="nav-link" href="/index">Inicio</a></li>
+							<li class="nav-item"><a class="nav-link" href="">Nosotros</a></li>
+							<li class="nav-item"><a class="nav-link" href="/menuPerros">Perros</a></li>
+							<li class="nav-item"><a class="nav-link" href="/menuGatos">Gatos</a></li>
+							<li class="nav-item"><a class="nav-link" href="">Contacto</a></li>
+							<li class="nav-item"><a class="nav-link" href="/formulario">Formulario</a></li>
+							<li class="nav-item"><a class="nav-link" href="/consultaClima">Consulta Clima</a></li>
+						</ul>
+				</div>
+			  </nav>
+			  <div class="col-md-9 col-xl-10">
+				<div>
+					<h1 class="display-3 text-center text-primario">ONG - AYUDA A UN PELUDO</h1>
+					<p class="text-justify text-light">Lorem ipsum dolor sit amet consectetur adipiscing elit gravida eros, venenatis phasellus faucibus parturient rutrum ut volutpat class auctor, luctus pulvinar risus erat praesent tincidunt fusce eleifend. Leo tristique ridiculus tempor augue ullamcorper molestie, nulla torquent scelerisque quam cursus tellus accumsan, potenti dapibus donec blandit at. Sagittis tempor vel feugiat nam mauris class, et rhoncus consequat viverra morbi eros, rutrum lobortis a dictum primis, accumsan libero nisi parturient ante.Lorem ipsum dolor sit amet consectetur adipiscing elit gravida eros, venenatis phasellus faucibus parturient rutrum ut volutpat class auctor, luctus pulvinar risus erat praesent tincidunt fusce eleifend. Leo tristique ridiculus tempor augue ullamcorper molestie, nulla torquent scelerisque quam cursus tellus accumsan, potenti dapibus donec blandit at. Sagittis tempor vel feugiat nam mauris class, et rhoncus consequat viverra morbi eros, rutrum lobortis a dictum primis, accumsan libero nisi parturient ante.</p>
+					<h2 class="display-5 text-center text-primario">Nuestras secciones de ayuda:</h2>
+				</div>
+				<div class="d-flex justify-content-center">
+					<a href="PerfilesGatos/GatosEnAdopcion.html"><img class="centradoimg gato" id="justificado"src="{% static 'img/ImagenesIndex/GatoIndex.png' %} "></a>
+					<a href="PerfilesPerros/PerrosEnAdopcion.html"><img class="centradoimg perro" src="{% static 'img/ImagenesIndex/PerroIndex.png' %} "></a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <script src="{% static 'js/main.js' %} "></script>
+		  <script src="{% static 'js/bootstrap.min.js' %} "></script>
+		  <script src="{% static 'js/bootstrap.bundle.min.js' %} "></script>
+	</body>
+<html> {% endcomment %}

@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+    {% block titulo %}
+        Lista de Mascotas
+    {% endblock titulo %}
+
+
+    {% block contenido %}
+        <div class="col-md-9 col-xl-10 m-auto" style="width: 80%;">
+            <div class="text-center">
+            <h1>Lista de Mascotas</h1>
+            </div>
+            <div class="row">
+            <table border = 1>
+                <tr> <td>ID</td> <td>CODIGO</td> <td>NOMBRE</td> <td>ESPECIE</td> <td>ADOPTADO</td> <td>ACCION</td> <td>ACCION</td>
+                {% for mascota in Mascotas %}
+                        <tr> <td>{{mascota.id}}</td> <td>{{mascota.codigo}}</td> <td>{{mascota.nombre}}</td> <td>{{mascota.especie}}</td> <td>{{mascota.adoptado}}</td>
+                        <td><a class= "btn btn-primary" href="{% url 'formMascotasEdit' mascota.id%}">Modificar</a></td>
+                        <td><a class= "btn btn-danger" href="{% url 'borrarMascota' mascota.id%}">Eliminar</a></td>
+                {% endfor %}
+            </table>
+            <h5><a href="{% url 'formMascotas' %}">AgregarMascota</a></h5>
+        </div>
+    {% endblock contenido %}
+

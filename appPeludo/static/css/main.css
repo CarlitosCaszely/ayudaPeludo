@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+.navbar a {
+    padding-bottom: 30px;
+}
+img {
+    width: 100%;
+}
+body {
+    background-image: url("Fondo.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
+.navbar .navbar-toggler {
+    top: .25rem;
+    right: 1rem;
+}
+.dropdown {
+    position: relative;
+}
+.d-flex {
+    display: flex!important;
+}
+.text-justify {
+    text-align: justify;
+}
+#menuvertical {
+    background-color:#3FB8A7;
+    padding:0%;
+}
+#menuvertical a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white; 
+}
+#menuvertical a:hover{
+    color: #19172A;
+    text-decoration: none;
+    background: #B0DEEB;
+
+}
+.text-primario {
+    color: #19172A!important;
+}
+.labelCiudad {
+    width: 300px;
+}
+@media screen and (min-width:767px) {
+    #menuvertical {
+        min-height: calc(100vh - 50px);
+    }
+}

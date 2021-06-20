@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+    {% block titulo %}
+        Modificar Mascota
+    {% endblock titulo %}
+
+
+    {% block contenido %}
+    <div class="text-center col-md-6 col-xl-4 col-sm-12 m-auto" >
+        <h1>Modificar Mascota</h1>
+        <form action="" method="POST" id="formulario">
+            {% csrf_token %}{% comment %} Se usa siempre este token cuando se está usando el metodo post en un formulario {% endcomment %}
+            <div class="form-group">´
+                {{form.as_table}}
+            </div>
+            <input type = "submit" class= "btn btn-danger" value="Modificar Mascota" id="guardar">
+            <input type = "reset" class= "btn btn-primary" value="Limpiar" id="limpiar">
+            <button type= "button" class="btn btn-secondary" value="Ver Lista" id="lista"><a href = {% url "listarMascotas" %}>Ver Lista</a></button>
+        </form>
+        <div class="alert alert-success" role="alert">
+            {{mensaje}}
+        </div>
+    </div>
+    {% endblock contenido %}
+
