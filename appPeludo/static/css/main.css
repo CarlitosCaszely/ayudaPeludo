@@ -40,22 +40,12 @@ body {
     color: #19172A;
     text-decoration: none;
     background: #B0DEEB;
-    position:fixed;
-    z-index: 1000;
-    left: 0;
-
 }
 .text-primario {
     color: #19172A!important;
 }
 .labelCiudad {
     width: 300px;
-}
-.menu-fixed{
-    position: fixed;
-    z-index:1000;
-    left:0;
-    height:100%;
 }
 @media screen and (min-width:767px) {
     #menuvertical {
