@@ -28,7 +28,10 @@ urlpatterns = [
     path('test/', appPeludo.views.test, name= 'test'),
     path('menuPerros/', appPeludo.views.menuPerros, name= 'menuPerros'),
     path('menuGatos/', appPeludo.views.menuGatos, name= 'menuGatos'),
+    path('Ginger/', appPeludo.views.ginger, name= 'ginger'),
     path('consultaClima/', appPeludo.views.consultaClima, name= 'consultaClima'),
+    path('portafolio/', appPeludo.views.portafolio, name= 'portafolio'),
+    path('carrusel/', appPeludo.views.carrusel, name= 'carrusel'),
 
     #Rutas de cada función
     path('crearMascota/', appPeludo.views.crearMascota, name= 'crearMascota'),

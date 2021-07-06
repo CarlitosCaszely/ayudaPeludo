@@ -1,0 +1,83 @@
+{% extends 'layout.html' %}
+    {% load static %}
+    {% block titulo %}
+        Carnet Perros
+    {% endblock titulo %}
+
+    {% block contenido %}
+        <div class="col-md-9 col-xl-10 col-sm-12 m-auto">
+            <section id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2>Portafolio</h2>
+                            <hr class="star-primary">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 portfolio-item">
+                            <a href="/Ginger" class="portfolio-link" data-toggle="modal">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="{% static 'img/GatosFamilia/Ginger.jpg' %}" height="225" class="img-responsive" alt="Ginger">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 portfolio-item">
+                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="{% static 'img/GatosFamilia/Lucifer.jpg' %}" height="225" class="img-responsive" alt="Luicfer">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 portfolio-item">
+                            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="{% static 'img/GatosFamilia/Tommy.jpg' %}" height="225" class="img-responsive" alt="Tommy">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 portfolio-item">
+                            <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="{% static 'img/PerrosFamilia/Cachulo.jpg' %}" height="225" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 portfolio-item">
+                            <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="{% static 'img/PerrosFamilia/Flaca.jpg' %}" height="225" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                        <div class="col-sm-4 portfolio-item">
+                            <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                                <div class="caption">
+                                    <div class="caption-content">
+                                        <i class="fa fa-search-plus fa-3x"></i>
+                                    </div>
+                                </div>
+                                <img src="{% static 'img/PerrosFamilia/Niña.jpg' %}" height="225" class="img-responsive" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    {% endblock contenido %}
+ 

@@ -29,8 +29,17 @@ def menuPerros(request):
 def menuGatos(request):
     return render(request,'PerfilesGatos/GatosEnAdopcion.html')
 
+def ginger(request):
+    return render(request,'PerfilesGatos/Ginger.html')
+
 def consultaClima(request):
     return render(request,'consultaClima.html')
+
+def portafolio(request):
+    return render(request,'portafolio.html')
+
+def carrusel(request):
+    return render(request,'carrusel.html')
 
 def test(request):
     lista=["Godswar", "Paladins", "Valorant", "CSGO", "Apex"]
